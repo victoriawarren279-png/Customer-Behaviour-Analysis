@@ -122,14 +122,12 @@ For example, selecting the Clothing category updates the customer KPIs and visua
 
 This project demonstrates the ability to:
 
-- Translate business questions into SQL queries
-- Analyse customer purchasing behaviour
-- Use aggregations, CTEs, CASE statements and window functions
+- Translate a business problem into focused analytical questions
+- Use SQL to analyse customer behaviour and identify meaningful patterns
 - Segment customers based on purchasing behaviour
-- Identify product and category performance
-- Build interactive Power BI dashboards
-- Connect analytical findings to business questions
-- Present data in a clear, decision-focused format
+- Analyse product, category, discount and shipping performance
+- Translate SQL findings into an interactive Power BI dashboard
+- Present data-driven insights in a clear, business-focused format
 
 ## Project Structure
 
