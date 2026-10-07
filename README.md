@@ -27,7 +27,13 @@ The project followed an end-to-end analytics workflow:
 
 **Raw Customer Data → SQL Analysis → Business Insights → Power BI Dashboard**
 
-### 1. Data Analysis with SQL
+### 1. Data Preparation & Exploration with Python
+
+Python was used to import, clean and explore the customer dataset before the SQL analysis.
+
+The Python workflow included data inspection, data cleaning and exploratory analysis to understand the structure of the dataset and identify relevant patterns for further investigation.
+
+### 2. Data Analysis with SQL
 
 SQL was used to explore the customer dataset and answer business questions relating to:
 
@@ -57,7 +63,7 @@ The analysis identified several patterns in customer purchasing behaviour:
 - **Young Adults generated the highest revenue by age group**, contributing £62,143, followed by Middle-Aged customers (£59,197).
 
 
-### 2. Power BI Dashboard
+### 3. Power BI Dashboard
 
 The findings from the SQL analysis were translated into an interactive Power BI dashboard.
 
