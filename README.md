@@ -2,70 +2,98 @@
 
 ## Project Overview
 
-This project explores customer purchasing behaviour to identify patterns and factors that may influence purchasing decisions, customer loyalty and overall sales performance.
+This project analyses customer purchasing behaviour to identify patterns and factors that may influence purchasing decisions, customer loyalty and sales performance.
 
-The project combines SQL-based analysis with Power BI visualisation to turn raw customer data into actionable business insights.
+The project combines SQL analysis with Power BI visualisation to turn raw customer data into actionable business insights.
 
 ## Business Problem
 
-A retail business wants to better understand its customers and identify the factors that influence purchasing behaviour.
+The objective of the analysis was to understand customer purchasing behaviour and identify patterns across:
 
-The analysis focuses on questions such as:
+- Customer demographics
+- Product categories
+- Purchase behaviour
+- Discounts
+- Reviews
+- Shipping methods
+- Customer loyalty
+- Subscription status
 
-- How does discount usage relate to purchase amounts?
-- Which products receive the highest customer ratings?
-- Does shipping type influence average purchase value?
-- Which products are most frequently purchased with discounts?
-- How can customers be segmented based on purchasing behaviour?
-- Which products perform best within each category?
+The analysis was designed to answer specific business questions around what customers purchase, how they purchase and which factors may influence purchasing behaviour.
 
-## Objectives
+## Analytical Approach
 
-The project aims to:
+The project followed an end-to-end analytics workflow:
 
-- Analyse customer purchasing behaviour
-- Identify patterns in spending and purchasing frequency
-- Explore the relationship between discounts and purchases
-- Analyse customer reviews and product performance
-- Segment customers based on purchasing behaviour
-- Identify potential opportunities to improve customer retention and sales
+**Raw Customer Data → SQL Analysis → Business Insights → Power BI Dashboard**
 
-## Tools & Technologies
+### 1. Data Analysis with SQL
 
-- SQL Server - data analysis and querying
-- Python - data preparation and analysis
-- Power BI - data visualisation and dashboard development
-- Excel - supporting data analysis
+SQL was used to explore the customer dataset and answer business questions relating to:
 
-## Analysis
+- Discount usage and purchase amounts
+- Product review ratings
+- Shipping methods and purchasing behaviour
+- Discount patterns across products
+- Customer segmentation
+- Product performance within categories
 
-The SQL analysis investigates:
+The SQL analysis can be found here:
 
-1. Discount usage vs average purchase amount
-2. Top products by average review rating
-3. Average purchase amount by shipping type
-4. Products most frequently purchased with discounts
-5. Customer segmentation
-6. Top-performing products within each category
+[View SQL Analysis](sql/customer_behaviour_analysis.sql)
 
-The results were then used to inform the Power BI dashboard.
+### 2. Power BI Dashboard
 
-## Power BI Dashboard
+The findings from the SQL analysis were translated into an interactive Power BI dashboard.
 
-The Power BI dashboard provides an interactive view of the customer data, allowing key metrics and purchasing patterns to be explored visually.
+The dashboard provides:
 
-Key metrics include:
-
-- Total customers
+- Customer KPIs
 - Average purchase amount
 - Average review rating
+- Revenue by category
+- Sales by category
+- Revenue by age group
+- Sales by age group
+- Subscription analysis
+
+Interactive filters allow users to explore the results by:
+
 - Subscription status
-- Customer purchasing behaviour
-- Product and category performance
+- Gender
+- Product category
+- Shipping type
 
-## Key Findings
+[View Power BI Dashboard](power-bi/dashboard.md)
 
-Key findings from the SQL analysis and Power BI dashboard will be documented here as the analysis is completed.
+## Key Dashboard Features
+
+### Customer KPIs
+
+The dashboard provides a high-level overview of:
+
+- Number of customers
+- Average purchase amount
+- Average review rating
+
+### Category Analysis
+
+Revenue and sales are compared across:
+
+- Clothing
+- Accessories
+- Footwear
+- Outerwear
+
+### Customer Demographics
+
+Revenue and sales are analysed across different customer age groups.
+
+### Interactive Analysis
+
+The dashboard allows users to filter the analysis dynamically.
+
+For example, selecting the Clothing category updates the customer KPIs and visualisations to show the behaviour of customers purchasing within that category.
 
 ## Project Structure
 
@@ -74,17 +102,10 @@ Marketing-Data-Analysis/
 │
 ├── README.md
 │
-├── SQL/
-│   └── analysis.sql
+├── sql/
+│   └── customer_behaviour_analysis.sql
 │
-├── Power-BI/
-│   └── dashboard
-│
-├── Python/
-│   └── analysis.ipynb
-│
-├── Data/
-│   └── customer_data.csv
-│
-└── Images/
-    └── dashboard.png
+└── power-bi/
+    ├── dashboard.md
+    ├── dashboard_overview.png
+    └── dashboard_filtered_clothing.png
